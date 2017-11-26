@@ -1,12 +1,12 @@
 body{
-	width:1920px; 
+	/*width:1920px; */
 	height:4440px;
 	font-family: 'Lato',sans-serif;
 	background-size:cover;
 }
 .menu{
 	display:flex;
-	width:1920px; 
+	/*width:1920px;*/ 
 	height:100px;
 	background-color: #575757;
 	opacity: 1;
@@ -14,8 +14,15 @@ body{
 
 .banner{
 	display:flex;
-	width:1920px; 
+	/*width:1920px; */
 	height:750px;
+}
+
+.img-banner{
+	display:flex;
+	width: 100%;
+	height:750px;
+	background-repeat:no-repeat;
 }
 
 .servicos{
@@ -43,8 +50,4 @@ body{
 	width:1920px;
 	height:370px;
 	background-color:orange;
-}
-
-.images{
-	background-size:contain;
 }
