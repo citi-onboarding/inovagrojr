@@ -1,39 +1,40 @@
 body{
-	/*display: flex;
-	width:1920px; */
-	height:4440px;
+	/*display: flex;*/
+	width: auto; 
+	height: 4440px;
 	font-family: 'Lato',sans-serif;
 	/*background-size:cover;*/
 }
 
 .navbar {
 	overflow: hidden;
-	height:100px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
 	z-index: 1030;
 	background-color: #575757; 
-	padding: 10px 0 10px 0;
 	transition: all 150ms ease 0s;
 	box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar a {
 	display: block;
-	float: left;
+	float: right;
 	color: #FFFFFF;
 	text-align: right;
-	padding: 50px 0px 0px 48px;
 	font-size: 26px;
 	font-weight: 500;
+	padding: 20px;
+}
+
+.navbar-collapse .navbar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .navbar .icon {
 	display: none;
-}
-
-.logo {
-	display: flex;
-	width: 330px;
-	height: 80px;
 }
 
 a:link {
@@ -42,6 +43,7 @@ a:link {
 
 @media screen and (max-width: 1000px) {
   .navbar a:not(:first-child) {display: none;}
+  .navbar div {display: none;}
   .navbar a.icon {
     float: right;
     display: block;
