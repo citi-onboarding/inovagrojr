@@ -27,6 +27,10 @@ body{
   font-weight: 500;
 }
 
+.navbar.responsive .navbar-collapse li {
+	display: block;
+}
+
 .navbar-collapse {
   display: flex;
   flex-direction: row;
@@ -55,6 +59,30 @@ a:link {
 
 .fixed-nav nav {
   position: fixed;
+}
+
+#banner {
+	height: 50vh;
+	background: url('../images/banner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#banner h2 {
+	color: white;
+	font-size: 3em;
+	margin-bottom: 22px;
+}
+
+#banner a {
+	background: yellow;
+	padding: 5px;
+	font-size: 2em;
 }
 
 @media screen and (max-width: 1100px) {
