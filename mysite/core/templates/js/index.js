@@ -1,11 +1,13 @@
 // responsive navbar
 function navbarResponsive() {
-	var x = document.getElementById("inicio");
-	if (x.className === "navbar") {
+	var menu = document.getElementById('navbar');
+	menu.classList.toggle('responsive');
+	/*var x = document.getElementById("inicio");
+	if (x.className === "navbar-collapse") {
 	    x.className += " responsive";
 	} else {
-	    x.className = "navbar";
-	}
+	    x.className = "navbar-collapse";
+	}*/
 }
 
 // sticky navbar on scroll

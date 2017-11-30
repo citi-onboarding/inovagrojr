@@ -1,5 +1,4 @@
 body{
-  /*display: flex;*/
   width: auto; 
   height: 4440px;
   font-family: 'Lato',sans-serif;
@@ -7,45 +6,57 @@ body{
 }
 
 .navbar {
-  overflow: hidden;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  z-index: 1030;
-  background-color: #575757; 
+  height: 70px;
+  background-color: rgba(0,0,0,.6) !important;
+  z-index: 1;
   transition: all 150ms ease 0s;
   box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar a {
-  display: block;
-  float: right;
+  /*display: block;
+  float: left;*/
   color: #FFFFFF;
   text-align: right;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
 }
 
-.navbar-collapse {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.navbar-collapse ul li {
+ul li {
   list-style: none;
   display: inline-block;
   padding: 20px;
 }
 
-.social-media a {
-  display: inline-block;
-  padding: 20px;
-  margin-right: 20px;
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
 }
 
-.navbar .icon {
+.navbar-collapse.responsive {
+  position: absolute;
+  display: block;
+  background-color: rgba(0,0,0,.6) !important;
+  top: 100%;
+  width: 100%;
+  border-top: 1px solid #575757;
+}
+
+.navbar-collapse.responsive li {
+  display: block;
+}
+
+.social-media {
+  display: inline-block;
+  padding: 20px;
+}
+
+.hamburguer {
   display: none;
 }
 
@@ -88,56 +99,19 @@ a:link {
   color:#8CCCBD;
   /*size;*/
 }
-@media screen and (max-width: 1100px) {
-  .navbar div {
-    display: none;
-  }
 
-  .navbar a.icon {
+@media (max-width: 800px) {
+  .hamburguer {
     display: block;
     float: right;
     padding: 20px;
   }
 
-  nav div ul {
-    overflow: hidden;
-    background: #272727;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .navbar.responsive {
-    position: relative;
-  }
-
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  nav ul li {
-    float: none;
-    text-align: left;
-    /*width: 100%;
-    margin: 0;*/
-  }
-
-  nav ul li a {
-    color: #fff;
-    padding: 10px;
-    border-bottom: 1px solid #404040;
-    display: block;
-    margin: 0;
-  }
-
-  .navbar.responsive .social-media {
+  .navbar-collapse {
     display: none;
   }
 
-  .navbar.responsive div {
-    display: flex;
-    height: auto;
-    padding-top: 50px; //
+  .social-media {
+    display: none;
   }
 }
