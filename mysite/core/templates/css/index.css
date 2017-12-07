@@ -144,8 +144,22 @@ footer {
   font-size: 1.2em;
 }
 
-.contact span {
+.contact a {
+  color: #575757;
+}
+
+.contact span, .map span {
   margin-left: 1vw;
+}
+
+/*#idMap {
+   width: 15vw;
+   height: 30vh;
+}*/
+
+.map i {
+   font-size: 1.2em;
+   margin-bottom: 3.5vh;
 }
 
 .copyright {
