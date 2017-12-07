@@ -5,9 +5,10 @@ function navbarResponsive() {
 }
 
 function navbarCollapse() {
-	const screen = window.innerWidth;
+	/*const screen = window.innerWidth;*/
+	const screen = document.body.clientWidth;
 	var menu = document.getElementById('navbar');
-	if (screen > 790 && menu.className === "navbar-collapse responsive") {
+	if (screen > 880 && menu.className === "navbar-collapse responsive") {
 		menu.className = "navbar-collapse";
 	}
 }
