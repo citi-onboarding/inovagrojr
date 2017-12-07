@@ -15,7 +15,7 @@ function navbarCollapse() {
 window.addEventListener('resize', navbarCollapse);
 
 // sticky navbar on scroll
-const nav = document.querySelector('#inicio');
+const nav = document.querySelector('#idNavbar');
 const navTop = nav.offsetTop;
 
 function stickyNavigation() {

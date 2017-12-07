@@ -1,8 +1,8 @@
 body{
-  width: auto; 
-  height: 4440px;
+  width: 100vw; 
+  height: 100vh;
   font-family: 'Lato',sans-serif; 
-  /*background-size:cover;*/
+  /*background-size:cover;*/ 
 }
 
 .navbar {
@@ -10,12 +10,16 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 70px;
   /*background-color: rgba(0,0,0,.6);*/
   /*background-color: #272727;*/
   z-index: 1;
   box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.9);
+}
+
+.navbar-logo, #navbar {
+  margin: 5vw;
 }
 
 .navbar.navbar-colorful.navbar-transparent {
@@ -49,7 +53,7 @@ ul li {
   display: block;
   background-color: inherit;
   top: 100%;
-  width: 100%;
+  width: 100vw;
   border-top: 1px solid #575757;
 }
 
@@ -110,6 +114,49 @@ a:link {
 
 .sobre-nosFonts{
   color:#8CCCBD;
+}
+
+footer {
+  width: 100vw;
+  height: 40vh;
+  /*background-color: #F2F2F2;*/
+  color: #575757;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*margin-left: 5vw;
+  margin-right: 5vw;*/
+  margin: 1vw 5vw 1vw 5vw;
+}
+
+.contact ul {
+  float: left;
+}
+
+.contact li {
+  display: block;
+}
+
+.contact i {
+  font-size: 1.2em;
+}
+
+.contact span {
+  margin-left: 1vw;
+}
+
+.copyright {
+ /* margin-left: 5vw;
+  margin-right: 5vw;*/
+  margin: 1vw 5vw 1vw 5vw;
+  border-top: 1px solid #272727;
+}
+
+.copyright p {
+  margin-top: 3.5vh;
 }
 
 @media screen and (max-width: 768px) {
