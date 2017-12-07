@@ -10,16 +10,20 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 70px;
-  /*background-color: rgba(0,0,0,.6);*/
-  /*background-color: #272727;*/
   z-index: 1;
   box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.9);
 }
 
-.navbar-logo, #navbar {
-  margin: 5vw;
+.navbar-logo {
+  margin-left: 5vw;
+}
+
+.navbar-logo img {
+  width: auto;
+  height: auto;
+  max-width: 150px;
 }
 
 .navbar.navbar-colorful.navbar-transparent {
@@ -33,7 +37,7 @@ body{
 .navbar a {
   color: #FFFFFF;
   text-align: right;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -62,9 +66,13 @@ ul li {
   padding: 15px;
 }
 
-.social-media {
+.social-media a {
   display: inline-block;
-  padding: 20px;
+  padding: 20px 0 20px 20px;
+}
+
+.social-media {
+  margin-right: 5vw;
 }
 
 .hamburguer {
@@ -132,6 +140,17 @@ footer {
   margin: 1vw 5vw 1vw 5vw;
 }
 
+.footer-logo img {
+  width: auto;
+  height: auto;
+  max-width: 320px;
+}
+
+.col1, .col2, .col3 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contact ul {
   float: left;
 }
@@ -153,8 +172,8 @@ footer {
 }
 
 /*#idMap {
-   width: 15vw;
-   height: 30vh;
+  width: 20vw;
+  height: 30vh;
 }*/
 
 .map i {
