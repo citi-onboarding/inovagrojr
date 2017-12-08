@@ -111,7 +111,6 @@ a:link {
   background: #8CCCBD;
   border-radius: 3px;
   padding: 8px 12px;
-  box-shadow: inset 0 2px 5px;
 }
 
 .sobre-nos{
@@ -135,8 +134,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*margin-left: 5vw;
-  margin-right: 5vw;*/
   margin: 1vw 5vw 1vw 5vw;
 }
 
@@ -148,7 +145,7 @@ footer {
 
 .col1, .col2, .col3 {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .contact ul {
@@ -179,13 +176,18 @@ footer {
 .map i {
    font-size: 1.2em;
    margin-bottom: 3.5vh;
+   padding: 0 0 0 5px;
+}
+
+.address-info {
+  margin-bottom: 15px;
 }
 
 .copyright {
  /* margin-left: 5vw;
   margin-right: 5vw;*/
   margin: 1vw 5vw 1vw 5vw;
-  border-top: 1px solid #272727;
+  border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 .copyright p {
@@ -206,4 +208,32 @@ footer {
   .social-media {
     display: none;
   }
-}
+
+  .footer-content {
+    flex-direction: column;
+  }
+  .col1, .col2, .col3 {
+    width: 100%;
+  }
+  .footer-logo {
+    margin: 15px auto 0;
+  }
+  .contact ul li {
+    padding-left: 0;
+  }
+  .map {
+    width: 100%;
+  }
+  
+  .map .fa-map-marker {
+    margin-left: -6px;
+  }
+  
+  #idMap {
+    width: 100%;
+  }
+  
+  .address-info {
+    margin-top: 15px;
+  }
+}  
