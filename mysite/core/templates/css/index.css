@@ -277,6 +277,40 @@ footer {
   margin-top: 3.5vh;
 }
 
+.servicos{
+  width:100vw;
+  height:1120px;
+}
+
+.bloco{
+  width:430px;
+  height:770px;
+  border:2px solid gray;
+  text-align:center;
+  border-radius:2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fotoServicos{
+  background-color:red;
+  width:auto;
+  height: 320px
+}
+
+.buttonServicos{
+  border: 2px solid white;
+  border-radius: 3%;
+  height: 7%;
+  width:40%;
+  align-self:center;
+}
+
+.contract{
+  font-size:100%;
+}
+
 @media screen and (max-width: 880px) {
 
   .hamburguer {
