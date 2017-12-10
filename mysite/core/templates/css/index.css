@@ -102,7 +102,7 @@ a:link {
 .sobre-nos{
   height: auto;
   width:auto;
-  background-color: #F2F2F2;/*#F2F2F2*/
+  background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
 }
@@ -196,12 +196,6 @@ a:link {
   padding: 8px 12px;
 }
 
-.sobre-nos{
-  height: 1420px;
-  background-color: #F2F2F2;
-  display: flex;
-}
-
 .sobre-nosFonts{
   color:#8CCCBD;
 }
@@ -280,12 +274,11 @@ footer {
 .servicos{
   width:100vw;
   height:1120px;
-}
-
+} 
 .bloco{
   width:430px;
   height:770px;
-  border:2px solid gray;
+  border:1px solid gray;
   text-align:center;
   border-radius:2%;
   display: flex;
@@ -294,21 +287,35 @@ footer {
 }
 
 .fotoServicos{
-  background-color:red;
   width:auto;
   height: 320px
 }
 
 .buttonServicos{
-  border: 2px solid white;
-  border-radius: 3%;
+  border: 1px solid white;
+  border-radius: 5%;
+  background-color:#0EbE68;
   height: 7%;
   width:40%;
   align-self:center;
 }
 
 .contract{
-  font-size:100%;
+  font-weight: 600;
+  color:white;
+  font-size:200%;
+}
+
+.fontServicos{
+  font-weight: 600;
+  font-size:27px;
+  color:#575757;
+}
+
+.fontServicosMenor{
+  color:#A8A8A8;
+  font-size:23px;
+  margin-top:40px;
 }
 
 @media screen and (max-width: 880px) {
