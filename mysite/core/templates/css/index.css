@@ -213,9 +213,17 @@ a:link {
   text-align:center;
   margin-top:1vw;
 }
+
+.container .sobre-nosplanta {
+  margin-top: -15vh;
+  margin-bottom: 5vh;
+}
+
+
 .sobre-nosplanta{
   display: flex;
   align-self: center;
+
 }
 .folha{
   height:5em;
@@ -372,6 +380,7 @@ footer {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 15vh;
 }
 
 .fotoServicos{
@@ -405,6 +414,16 @@ footer {
 .fontServicosMenor{
   color:#A8A8A8;
   font-size:23px;
+  height: 20%;
+}
+
+.servicosmobile {
+  display: none;
+}
+@media screen and (max-width: 984px) {
+  .servicos .slideshow-container{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 880px) {
