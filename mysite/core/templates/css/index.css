@@ -2,7 +2,6 @@ body{
   width: 100vw; 
   height: 100vh;
   font-family: 'Lato',sans-serif; 
-  /*background-size:cover;*/ 
 }
 
 .navbar {
@@ -86,7 +85,7 @@ a:link {
 .banner{
   background: url('../images/banner.jpg') no-repeat center;
   background-size: cover;
-  height: 50vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,6 +99,90 @@ a:link {
   text-align: center;
 }
 
+.sobre-nos{
+  height: auto;
+  width:auto;
+  background-color: #F2F2F2;/*#F2F2F2*/
+  display: flex;
+  flex-direction: column;
+}
+
+.fontCabecalho{
+  color:#272727;
+  font-size:4vw;
+  margin-top:2vw;
+  margin-right: 4vw;
+}
+.sobre-nosFonts{
+  color:#8CCCBD;
+  font-size:3.5vw;
+  margin-top:1vw;
+}
+.mvvfonts {
+  color:#272727;
+  font-size: 2vw;
+  text-align:center;
+  margin-top:1vw;
+}
+.sobre-nosplanta{
+  display: flex;
+  align-self: center;
+}
+.folha{
+  height:5em;
+  width:4.5em;
+  margin-top:1.5vw;
+  margin-right:2vw;
+}
+.mvvimages{
+  height:8em;
+  width:8em;
+}
+
+.mvv{
+  display:flex;
+  justify-content: space-around;
+}
+
+.equipeImg{
+  height:31vh;
+  width:29vw;
+  margin-top:10vw;
+  margin-left:13vw;
+  padding-bottom:3vw;
+}
+.sessaoFoto{
+  display: flex;
+}
+
+.umafonte{
+  text-align:left;
+  color:#272727;
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+
+.missao{
+  margin-top:5vw;
+  text-align:center;
+}
+.valores{
+  margin-top:5vw;
+  text-align:center;
+}
+.visao{
+  margin-top:5vw;
+  text-align:center;
+  margin-left:8vw;
+}
+.inovagroInfo{
+  margin-top: 10vw;
+  margin-left: 5vw;
+}
+
+#eyesize{
+  font-size: 8em;
+}
 @media screen and (max-width:768px) {
   .banner div {
     height: 70%;
@@ -195,6 +278,7 @@ footer {
 }
 
 @media screen and (max-width: 880px) {
+
   .hamburguer {
     display: block;
     float: right;
@@ -237,3 +321,121 @@ footer {
     margin-top: 15px;
   }
 }  
+
+}
+
+@media screen and (max-width:1120px){
+  .folha{
+    height:3.5em;
+    width:3.0em;
+  }
+  #eyesize{
+  font-size: 7em;
+}
+
+.mvvimages{
+  height:7em;
+  width:7em;
+}
+
+}
+
+@media screen and (max-width:920px){
+  .folha{
+    height:3.0em;
+    width:2.5em;
+  }
+}
+
+@media screen and (max-width:880px){
+  .folha{
+    height:2.2em;
+    width:1.8em;
+  }
+
+  #eyesize{
+  font-size: 5em;
+}
+
+.mvvimages{
+  height:5em;
+  width:5em;
+}
+}
+
+@media screen and (max-width:600px){
+  .folha{
+    height:1.9em;
+    width:1.6em;
+  }
+  #eyesize{
+  font-size: 3em;
+}
+
+.mvvimages{
+  height:3em;
+  width:3em;
+}
+}
+
+@media screen and (max-width:580px){
+  .folha{
+    height:1.6em;
+    width:1.2em;
+  }
+
+  #eyesize{
+  font-size: 2em;
+}
+
+.mvvimages{
+  height:2em;
+  width:2em;
+}
+}
+
+@media screen and (max-width:400px){
+  .folha{
+    height:1.2em;
+    width:0.8em;
+  }
+}
+
+@media screen and (max-width: 414px){ /*mobile resolution*/
+    .mvv{
+    flex-direction: column;
+    }
+    .missao{
+    margin-top:5vw;
+    text-align:center;
+    }
+  .valores{
+    margin-top:5vw;
+    text-align:center;
+    }
+  .visao{
+    margin-left:0vw;
+    }
+  .inovagroInfo{
+  margin-top: 4vw;
+  margin-left: 0vw;
+  margin-bottom: 4vw;
+}
+    .equipeImg{
+    height:33vh;
+    width:100vw;
+    margin-top:4vw;
+    margin-left:0vw;
+    padding-bottom:0vw;
+  }
+  .sessaoFoto{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .umafonte{
+    text-align:center;
+  }
+  .sobre-nosFonts{
+    text-align:center;
+  }
+} 
