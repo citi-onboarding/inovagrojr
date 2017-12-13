@@ -106,9 +106,13 @@ a:link {
   margin: auto;
 }
 
+#servicos1 {
+  display: none;
+}
+
 /* Hide the images by default */
-.mySlides {
-    display: none;
+.mySlides, .mySlides-mobile {
+  display: none;
 }
 
 /* Next & previous buttons */
@@ -117,7 +121,7 @@ a:link {
   position: absolute;
   top: 50%;
   width: auto;
-  margin: 0 8vw 0 8vw;
+  margin: 0 5vw 0 5vw;
   padding: 5px;
   color: black;
   font-weight: bold;
@@ -133,10 +137,6 @@ a:link {
 	padding-top: 5vw;
 	padding-bottom: 8vw;
 }
-
-/*.prev {
-	margin-bottom: 4vw;
-}*/
 
 /* Position the "next button" to the right */
 .next {
@@ -417,17 +417,31 @@ footer {
   height: 20%;
 }
 
-.servicosmobile {
+/*.servicosmobile {
   display: none;
 }
+
+#servicos3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+*/
+
 @media screen and (max-width: 984px) {
-  .servicos .slideshow-container{
+  #servicos3 {
     display: none;
+  }
+
+  #servicos1 {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: space-around;
+  	align-items: center;
   }
 }
 
 @media screen and (max-width: 880px) {
-
   .hamburguer {
     display: block;
     float: right;
