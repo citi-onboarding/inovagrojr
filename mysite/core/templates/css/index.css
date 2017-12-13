@@ -1,4 +1,4 @@
-body{
+body {
   width: 100vw; 
   height: 100vh;
   font-family: 'Lato',sans-serif; 
@@ -117,13 +117,12 @@ a:link {
   position: absolute;
   top: 50%;
   width: auto;
-  /*margin-top: -22px;*/
-  margin: 6vw;
-  padding: 16px;
+  margin: 0 8vw 0 8vw;
+  padding: 5px;
   color: black;
   font-weight: bold;
   font-size: 42px;
-  transition: 0.6s ease;
+  transition: 0.5s ease;
   border-radius: 0 3px 3px 0;
 }
 
@@ -131,8 +130,8 @@ a:link {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 5vw;
+	padding-bottom: 8vw;
 }
 
 /*.prev {
@@ -147,7 +146,8 @@ a:link {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.1);
+  color: #8CCCBD;
 }
 
 /* The dots/bullets/indicators */
@@ -159,15 +159,15 @@ a:link {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.2s ease;
 }
 
 .dots {
-	padding-bottom: 30px;
+	padding-top: 65px;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #0C874B;
 }
 
 /* Fading animation */
@@ -198,7 +198,7 @@ a:link {
 
 .fontCabecalho{
   color:#272727;
-  font-size:4vw;
+  font-size:3vw;
   margin-top:2vw;
   margin-right: 4vw;
 }
@@ -214,22 +214,22 @@ a:link {
   margin-top:1vw;
 }
 
-.container .sobre-nosplanta {
+/*.container .sobre-nosplanta {
   margin-top: -15vh;
   margin-bottom: 5vh;
-}
-
+}*/
 
 .sobre-nosplanta{
   display: flex;
   align-self: center;
-
+  padding-bottom: 5vh;
 }
+
 .folha{
-  height:5em;
-  width:4.5em;
+  height:3.5em;
+  width:3.5em;
   margin-top:1.5vw;
-  margin-right:2vw;
+  margin-right:1.5vw;
 }
 .mvvimages{
   height:8em;
@@ -372,28 +372,28 @@ footer {
   width:100vw;
 } 
 .bloco{
-  width:320px;
-  height:650px;
+  width:270px;
+  height:460px;
   border:1px solid gray;
   text-align:center;
   border-radius:2%;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 15vh;
+  margin-top: 5vh;
 }
 
 .fotoServicos{
   width:auto;
   height: auto;
-  max-height: 250px;
+  max-height: 180px;
 }
 
 .buttonServicos{
   border: 1px solid white;
   border-radius: 4px;
   background-color:#0EbE68;
-  height: 7%;
+  height: 8%;
   width:50%;
   margin-bottom: 10px;
   align-self:center;
@@ -402,18 +402,18 @@ footer {
 .contract{
   font-weight: 600;
   color:white;
-  font-size:200%;
+  font-size:18px;
 }
 
 .fontServicos{
   font-weight: 600;
-  font-size:27px;
+  font-size:18px;
   color:#575757;
 }
 
 .fontServicosMenor{
   color:#A8A8A8;
-  font-size:23px;
+  font-size:16px;
   height: 20%;
 }
 
