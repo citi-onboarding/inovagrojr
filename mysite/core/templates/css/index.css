@@ -198,8 +198,7 @@ a:link {
 
 .fontCabecalho{
   color:#272727;
-  font-size:3vw;
-  margin-top:2vw;
+  font-size:2.5em;
   margin-right: 4vw;
 }
 .sobre-nosFonts{
@@ -222,15 +221,14 @@ a:link {
 .sobre-nosplanta{
   display: flex;
   align-self: center;
-  padding-bottom: 5vh;
 }
 
 .folha{
   height:3.5em;
   width:3.5em;
-  margin-top:1.5vw;
   margin-right:1.5vw;
 }
+
 .mvvimages{
   height:8em;
   width:8em;

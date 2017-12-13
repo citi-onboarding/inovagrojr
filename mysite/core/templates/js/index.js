@@ -34,7 +34,7 @@ function stickyNavigation() {
 
 window.addEventListener('scroll', stickyNavigation);
 
-// servicos3
+// servicos
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -69,7 +69,6 @@ function x(classname) {
 		slides[slideIndex-1].style.alignItems = "center";
 	}
 }
-window.addEventListener('resize', x);
 
 function showSlides(n) {
   var i;
@@ -92,3 +91,5 @@ function showSlides(n) {
 	x(classname);
 	dots[slideIndex-1].className += " active";
 }
+
+window.addEventListener('resize', showSlides);
