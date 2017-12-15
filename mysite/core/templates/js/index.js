@@ -55,7 +55,7 @@ function carouselResponsive() {
 }
 
 function carouselResponsiveStyle(classname) {
-	console.log('XXXXXX  ' + classname);
+	console.log(classname);
 	var slides = document.getElementsByClassName(classname);
 	if (classname === "mySlides") {
 		slides[slideIndex-1].style.display = "flex";
@@ -71,7 +71,7 @@ function carouselResponsiveStyle(classname) {
 
 function showSlides(n) {
 	const screen = document.body.clientWidth;
-  var i;
+  var i, j;
 	var classname = carouselResponsive();
   var slides = document.getElementsByClassName(classname);
   var dots = document.getElementsByClassName("dot");
@@ -84,7 +84,15 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
 	carouselResponsiveStyle(classname);
-	dots[slideIndex-1].className += " active";
+	
+	if (slideIndex > 5 && slideIndex <= 10) {
+		j = slideIndex % 6;
+	} else if (slideIndex > 10) {
+		j = slideIndex % 11;
+	}	else {
+		j = slideIndex-1;
+	}
+	dots[j].className += " active";
 }
 
 window.addEventListener('resize', showSlides);
