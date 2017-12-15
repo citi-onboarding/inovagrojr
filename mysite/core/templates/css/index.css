@@ -415,17 +415,6 @@ footer {
   font-size:16px;
 }
 
-/*.servicosmobile {
-  display: none;
-}
-
-#servicos3 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-*/
-
 @media screen and (max-width: 984px) {
   #servicos3 {
     display: none;
