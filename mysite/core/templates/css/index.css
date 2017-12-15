@@ -369,12 +369,13 @@ footer {
 .servicos{
   width:100vw;
 } 
+
 .bloco{
   width:270px;
-  height:460px;
+  height:500px;
   border:1px solid gray;
   text-align:center;
-  border-radius:2%;
+  border-radius:8px;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-around;
@@ -412,7 +413,6 @@ footer {
 .fontServicosMenor{
   color:#A8A8A8;
   font-size:16px;
-  height: 20%;
 }
 
 /*.servicosmobile {

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cards</title>
+</head>
+<body>
+	<div id="container">
+	</div>
+	
+<script type="text/javascript">
+	var container = document.getElementById('container');
+	var services = {
+		"Paisagismo": {
+			"pic": 'paisagismo.jpeg',
+			"desc": 'Alia técnica e arte para criar ambientes atrativos do ponto de vista estético, funcional e natural através de plantas ornamentais como árvores, arbustos, forrações e flores.'
+		},
+		"Hidroponia": {
+			"pic": 'hidroponia.jpg',
+			"desc": 'Realização, implantação e manutenção de sistemas sem utilização de solos, com uso de soluções nutritivas, adequando-os para diversos ambientes e fins.'
+		},
+		"Análise de solo": {
+			"pic": 'analisesolo.jpeg',
+			"desc": 'Identificação dos componentes físicos e químicos do solo para avaliar o nível de deficiência de nutrientes e determinar as quantidades a serem aplicadas na adubação e correção do PH.'
+		},
+		"Implantação e manutenção de pomares, olerícolas, florestais e pastagens": {
+			"pic": 'manutencao.jpg',
+			"desc": 'Implantar lavouras auxiliando nos cuidados pré e pós-plantio, tais como: escolha de sementes ou muda, poda, manejo da irrigação e tratos culturais.'
+		},
+		"Identificação e controle de plantas invasoras, doenças e pragas": {
+			"pic": 'praga.jpg',
+			"desc": 'Identificar plantas invasoras, agentes patogênicos e insetos pragas que ocasionam a diminuição da produção e em razão disso orientar o controle eficaz dos mesmos visando a produção máxima da sua lavoura.'
+		},
+		"Planejamento, otimização de projetos agrícolas": {
+			"pic": 'projetos.png',
+			"desc": 'Planejamento: Guiar os produtores na implantação de uma lavoura, onde será relatado a viabilidade e estruturação desta, melhores épocas para o plantio e resultados esperados. Otimização: fundamenta-se no estudo e orientação de práticas mais assertivas para projetos agrícolas já em funcionamento.'
+		},
+		"Diagnóstico ambiental": {
+			"pic": 'diagnostico.jpeg',
+			"desc": 'Identificação de parâmetros de determinada área, tais como características do meio antrópico, biótico e físico, fornecendo conhecimento suficiente para identificar e avaliar os impactos causados por projetos agrícolas ou obras civis.'
+		},
+		"Elaboração de estudos ambientais": {
+			"pic": 'estudos.jpg',
+			"desc": 'Estudos para atender exigências ambientais de nível federal, estadual e municipal para projetos agropecuários, engenharias civis e outros.'
+		},
+		"CAR": {
+			"pic": 'car.jpg', 
+			"desc": 'Elaboração de um inventário florestal para que seja permitindo a realização de atividades de supressão vegetal.'
+		},
+		"Elaboração de Programa de Gerenciamento de Resíduos Sólidos": {
+			"pic": 'residuos.jpeg',
+			"desc": 'Realizar um levantamento dos resíduos sólidos produzidos na implantação e elaboração de um projeto seja ele de fim agropecuário, construção civil e industriais.'
+		},
+		"Elaboração de Programa de Recuperação de Área Degradada": {
+			"pic": 'degradada.jpeg',
+			"desc": 'Elaboração de um programa para recuperar áreas que foram degradadas por atividades agrícolas, industriais e de construção civil.'
+		},
+		"Licenciamento Ambiental de Empreendimentos": {
+			"pic": 'licenciamento.jpeg',
+			"desc": 'Acessória para obtenção das licenças ambientais dos empreendimentos agrícolas, industriais e de construção civis.'
+		}
+	}
+	function generateCards() {
+		var i = 0;
+		for (var key in services) {
+			i += 1;
+			var p = document.createElement('p');
+			var card = `
+				<div class="bloco">
+				   <p class="fontServicos">${key}</p>
+				   <img src="images/services/${services[key].pic}" class="fotoServicos">
+				   <div class="fotoServicos"></div>
+				   <p class="fontServicosMenor">
+						${services[key].desc}
+				   </p>
+				   <button type="button" class="buttonServicos">
+				      <p class="contract">Contratar</p>
+				   </button>
+				</div>
+		  		`
+			if (i % 4 == 0 && i != 3 && i != 8 && i != 12 || i == 10 || i == 1 || i == 7) {
+				var div = '<div class="mySlides-mobile fade">';
+				p.prepend(div);
+			}
+			p.append(card);
+			container.append(p);
+			if (i % 3 == 0 && i != 1) {
+				var div = '</div>';
+				p.append(div);
+			}
+		}
+	}
+
+	generateCards();
+</script>
+</body>
+</html>
