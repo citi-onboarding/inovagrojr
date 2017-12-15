@@ -1,7 +1,3 @@
-// global variables
-const screen = document.body.clientWidth;
-
-
 // responsive navbar
 function navbarResponsive() {
 	var menu = document.getElementById('navbar');
@@ -9,6 +5,7 @@ function navbarResponsive() {
 }
 
 function navbarCollapse() {
+	const screen = document.body.clientWidth;
 	var menu = document.getElementById('navbar');
 	if (screen > 880 && menu.className === "navbar-collapse responsive") {
 		menu.className = "navbar-collapse";
@@ -48,7 +45,8 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function carouselResponsive (){
+function carouselResponsive() {
+	const screen = document.body.clientWidth;
 	if (screen > 984) {
 		return "mySlides";
 	} else {
@@ -56,7 +54,8 @@ function carouselResponsive (){
 	}
 }
 
-function x(classname) {
+function carouselResponsiveStyle(classname) {
+	console.log('XXXXXX  ' + classname);
 	var slides = document.getElementsByClassName(classname);
 	if (classname === "mySlides") {
 		slides[slideIndex-1].style.display = "flex";
@@ -71,10 +70,9 @@ function x(classname) {
 }
 
 function showSlides(n) {
+	const screen = document.body.clientWidth;
   var i;
 	var classname = carouselResponsive();
-  console.log(screen);
-  console.log(classname);
   var slides = document.getElementsByClassName(classname);
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1} 
@@ -85,10 +83,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-	/*slides[slideIndex-1].style.display = "flex";
-	slides[slideIndex-1].style.justifyContent = "space-around";
-	slides[slideIndex-1].style.alignItems = "center";*/
-	x(classname);
+	carouselResponsiveStyle(classname);
 	dots[slideIndex-1].className += " active";
 }
 

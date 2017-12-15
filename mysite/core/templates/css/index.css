@@ -106,10 +106,6 @@ a:link {
   margin: auto;
 }
 
-#servicos1 {
-  display: none;
-}
-
 /* Hide the images by default */
 .mySlides, .mySlides-mobile {
   display: none;
@@ -130,12 +126,12 @@ a:link {
   border-radius: 0 3px 3px 0;
 }
 
-.container {
+.servicos-container {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding-top: 5vw;
-	padding-bottom: 8vw;
+	padding-top: 50px;
+	padding-bottom: 60px;
 }
 
 /* Position the "next button" to the right */
@@ -163,7 +159,8 @@ a:link {
 }
 
 .dots {
-	padding-top: 65px;
+	padding-top: 45px;
+	text-align: center;
 }
 
 .active, .dot:hover {
@@ -173,18 +170,18 @@ a:link {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.8s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.8s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .3} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .3} 
   to {opacity: 1}
 }
 
@@ -198,7 +195,7 @@ a:link {
 
 .fontCabecalho{
   color:#272727;
-  font-size:2.5em;
+  font-size:2em;
   margin-right: 4vw;
 }
 .sobre-nosFonts{
@@ -213,20 +210,15 @@ a:link {
   margin-top:1vw;
 }
 
-/*.container .sobre-nosplanta {
-  margin-top: -15vh;
-  margin-bottom: 5vh;
-}*/
-
 .sobre-nosplanta{
   display: flex;
   align-self: center;
 }
 
 .folha{
-  height:3.5em;
-  width:3.5em;
-  margin-right:1.5vw;
+  height:3em;
+  width:3em;
+  padding-right: 10px;
 }
 
 .mvvimages{
@@ -340,11 +332,6 @@ footer {
   margin-left: 1vw;
 }
 
-/*#idMap {
-  width: 20vw;
-  height: 30vh;
-}*/
-
 .map i {
    font-size: 1.2em;
    margin-bottom: 3.5vh;
@@ -356,8 +343,6 @@ footer {
 }
 
 .copyright {
- /* margin-left: 5vw;
-  margin-right: 5vw;*/
   margin: 1vw 5vw 1vw 5vw;
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
@@ -368,11 +353,18 @@ footer {
 
 .servicos{
   width:100vw;
-} 
+}
+
+.servicos-planta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
 
 .bloco{
-  width:270px;
-  height:500px;
+  width:250px;
+  height:440px;
   border:1px solid gray;
   text-align:center;
   border-radius:8px;
@@ -383,9 +375,25 @@ footer {
 }
 
 .fotoServicos{
-  width:auto;
+  width: auto;
   height: auto;
-  max-height: 180px;
+  max-height: 160px;
+}
+
+.fontServicos{
+  font-weight: 600;
+  font-size: 18px;
+  color: #575757;
+  height: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fontServicosMenor{
+  color: #A8A8A8;
+  font-size: 16px;
+  height: 100px;
+  padding: 5px;
 }
 
 .buttonServicos{
@@ -393,7 +401,7 @@ footer {
   border-radius: 4px;
   background-color:#0EbE68;
   height: 8%;
-  width:50%;
+  width: 45%;
   margin-bottom: 10px;
   align-self:center;
 }
@@ -401,30 +409,18 @@ footer {
 .contract{
   font-weight: 600;
   color:white;
-  font-size:18px;
-}
-
-.fontServicos{
-  font-weight: 600;
-  font-size:18px;
-  color:#575757;
-}
-
-.fontServicosMenor{
-  color:#A8A8A8;
-  font-size:16px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 984px) {
   #servicos3 {
     display: none;
   }
+}
 
+@media screen and (min-width: 984px) {
   #servicos1 {
-  	display: flex;
-  	flex-direction: column;
-  	justify-content: space-around;
-  	align-items: center;
+    display: none;
   }
 }
 
