@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset = "UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css\cssreset.css">
+	<link rel="stylesheet" type="text/css" href="{% static "css/cssreset.css" %}">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css\index.css">
+	<link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Inovagro Jr</title>
 </head>
@@ -13,7 +14,7 @@
 	<nav class="navbar navbar-colorful navbar-transparent" id="idNavbar">
 		<a class="navbar-logo" href="/">
 			<!-- <img src="http://via.placeholder.com/200x50"> -->
-			<img src="images/logo1.png">
+			<img src="{% static "images/logo1.png" %}">
 		</a>
 		<div class="navbar-collapse" id="navbar">
 			<ul class="navbar-topicos" id="topicos">
@@ -41,12 +42,12 @@
   
   	<div class="sobre-nos">
   		<div class = "sobre-nosplanta">
-  			<img class = "folha" src="images/folha.png">
+  			<img class = "folha" src="{% static "images/folha.png" %}">
   			<h1 class="fontCabecalho">Sobre nós</h1>
   		</div>
   		<div class = "mvv">
   			<div class = "missao">
-  				<img class = "mvvimages" src="images/missao.png">
+  				<img class = "mvvimages" src="{% static "images/missao.png" %}">
   				<h2 class="sobre-nosFonts">Missão</h2>
   				<p class = "mvvfonts">Formar líderes para<br>
 	  		   criar impacto <br>
@@ -64,7 +65,7 @@
   			</div>
 
   			<div class = "valores">
-  				<img class = "mvvimages" src="images/valores.png">
+  				<img class = "mvvimages" src="{% static "images/valores.png" %}">
   				<h2 class="sobre-nosFonts">Valores</h2>
   				<p class = "mvvfonts">
 	  			Leve ​a ​Inovagro para ​sua ​vida;<br>
@@ -86,11 +87,30 @@
 			    de paisagismo e consultorias voltadas para<br>
 			    área ambiental e agropecuária.</p>
 	  		</div>
-			<img class = "equipeImg" src="images/equipe.jpg">
+			<img class = "equipeImg" src= {% static "images/equipe.jpg" %}>
 	  	</div>	
 	</div>
-  
   	<div class="contato">
+  		<div style = "display:flex">
+  		<img class = "folha" src= "{% static "images/folhabranca.png" %}">
+		<p class = "fontCabecalho" id = "fontContato">Contato</p>
+		</div>
+  			<form class = "form" method="POST">
+              <div class = "contatoForm">
+	              {% csrf_token %}
+	              <div class = "leftForm">
+		              <input class = "msgField" type="text" name="nome" placeholder="Nome"><br>
+		              <input class = "msgField" type="text" name="email" placeholder="Email"><br>
+		              <input class = "msgField" type="text" name="telefone" placeholder="Telefone"><br>
+		              <input class = "msgField" type="text" name="comoconheceu" placeholder="Como você conheceu a Inovagro Júnior?"><br>
+	              </div>
+	              <div class = "rightForm">
+	              	 <input class = "msgField" type="text" name="assunto" placeholder="Assunto"><br>
+	             	 <textarea class = "biggerMsgField" type="text" name="mensagem" placeholder="Deixe-nos uma mensagem"></textarea><br>
+              	</div>
+              </div>
+              <button class = "sendButton" type="submit">Enviar</button><br>
+            </form>
 	</div>
   
   	<footer>
@@ -98,7 +118,7 @@
   			<div class="col1">
   				<div class="footer-logo">
 					<!-- <img src="http://via.placeholder.com/250x150"> -->
-					<img src="images/logo2.png">
+					<img src="{% static "images/logo2.png" %}">
 				</div>
   			</div>
   			
@@ -128,7 +148,7 @@
   		</div>
 	</footer>
 
-	<script src="js/index.js"></script>
+	<script src={%static "js/index.js" %}></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9mxoPANZovp1gpIAi_On1g4ZU75JsiiI&callback=initMap"
   type="text/javascript"></script>
 </body>

@@ -160,6 +160,7 @@ a:link {
   color:#272727;
   font-size: 2vw;
   margin-top: 2vw;
+  margin-bottom:2vw;
 }
 
 .missao{
@@ -183,6 +184,7 @@ a:link {
 #eyesize{
   font-size: 8em;
 }
+
 @media screen and (max-width:768px) {
   .banner div {
     height: 70%;
@@ -194,12 +196,6 @@ a:link {
   background: #8CCCBD;
   border-radius: 3px;
   padding: 8px 12px;
-}
-
-.sobre-nos{
-  height: 1420px;
-  background-color: #F2F2F2;
-  display: flex;
 }
 
 .sobre-nosFonts{
@@ -276,6 +272,8 @@ footer {
 .copyright p {
   margin-top: 3.5vh;
 }
+
+
 
 @media screen and (max-width: 880px) {
 
@@ -439,3 +437,277 @@ footer {
     text-align:center;
   }
 } 
+
+
+.contato{
+  background: url('../images/contatos.jpg') no-repeat center;
+  background-size: cover;
+  height:35vw;
+  width:auto;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-direction:column;
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:100vw;
+}
+.contatoForm{
+  display:flex;
+  justify-content: center;
+  width:100vw;
+  align-items:center;
+  margin-bottom:2vw;
+}
+
+.rightForm{
+  display:flex;
+  flex-direction:column;
+  width:35vw;
+  height:15vw;
+  margin-left:3vw;
+}
+
+.leftForm{
+  display:flex;
+  flex-direction: column;
+  width:35vw;
+  height:15vw;
+  margin-right:3vw;
+}
+.msgField{
+  border-radius:0.2vw;
+  border:none;
+  color:black;
+  font-size:1.2vw;
+  padding-left:0.5vw;
+  padding-top:0.5vw;
+  padding-bottom: 1vw;
+  font-family: 'Lato Semi-Bold',sans-serif;
+}
+
+.biggerMsgField{
+  border-radius:0.2vw;
+  border:none; 
+  font-family: 'Lato Semi-Bold',sans-serif; 
+  resize: none;
+  color:black;
+  font-size:1.2vw;
+  padding-left:0.5vw;
+  height:10.8vw;
+}
+
+.sendButton{
+  border-radius: 0.3vw;
+  background-color:#0EbE68;
+  padding-bottom:0.5vw;
+  padding-top:0.5vw; 
+  padding-left:1vw;
+  padding-right:1vw;
+  color:white;
+  font-family: 'Lato Semi-Bold',sans-serif;
+  font-size:1.5vw;
+  align-self:center;
+  margin-bottom:1.5vw;
+  border:none;
+  text-decoration: none;
+  text-align:center;
+}
+
+#fontContato{
+  color:white;
+  font-size:2.5vw;
+}
+
+
+@media screen and (max-width:910px){
+
+
+  .contato{
+  background: url('../images/contatos.jpg') no-repeat center;
+  background-size: cover;
+  height:55vw;
+  width:auto;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction:column;
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:100vw;
+}
+.contatoForm{
+  display:flex;
+  justify-content: center;
+  width:100vw;
+  align-items:center;
+  height: auto;
+}
+
+.rightForm{
+  display:flex;
+  flex-direction:column;
+  width:35vw;
+  height:auto;
+  margin-left:3vw;
+}
+
+.leftForm{
+  display:flex;
+  flex-direction: column;
+  width:35vw;
+  height:auto;
+  margin-right:3vw;
+}
+.msgField{
+  border-radius:0.2vw;
+  border:none;
+  color:black;
+  font-size:2vw;
+  padding-left:0.5vw;
+  padding-top:0.5vw;
+  padding-bottom: 1vw;
+  font-family: 'Lato Semi-Bold',sans-serif;
+}
+
+.biggerMsgField{
+  border-radius:0.2vw;
+  border:none; 
+  font-family: 'Lato Semi-Bold',sans-serif; 
+  resize: none;
+  color:black;
+  font-size:2vw;
+  padding-left:0.5vw;
+  padding-bottom:4.5vw;
+}
+
+.sendButton{
+  border-radius: 0.3vw;
+  background-color:#0EbE68;
+  padding-bottom:0.5vw;
+  padding-top:0.5vw; 
+  padding-left:1vw;
+  padding-right:1vw;
+  color:white;
+  font-family: 'Lato Semi-Bold',sans-serif;
+  font-size:2.5vw;
+  align-self:center;
+  margin-top:0;
+  border:none;
+  text-decoration: none;
+  text-align:center;
+}
+
+#fontContato{
+  color:white;
+  font-size:3.5vw;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:414px){
+  .contato{
+  background: url('../images/contatos.jpg') no-repeat center;
+  background-size: cover;
+  height:110vw;
+  width:auto;
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content: space-around;
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:100vw;
+}
+.contatoForm{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  width:auto;
+  align-items:center;
+  margin-bottom:4vw;
+  height:auto;
+}
+
+.rightForm{
+  display:flex;
+  flex-direction:column;
+  width:55vw;
+  height:auto;
+  margin-left:0vw;
+}
+
+.leftForm{
+  display:flex;
+  flex-direction: column;
+  width:55vw;
+  height:auto;
+  margin-right:0vw;
+}
+.msgField{
+  border-radius:0.5vw;
+  border:none;
+  color:black;
+  font-size:2.8vw;
+  padding-left:0.5vw;
+  padding-top:0.5vw;
+  padding-bottom: 1vw;
+  font-family: 'Lato Semi-Bold',sans-serif;
+}
+
+.biggerMsgField{
+  border-radius:0.5vw;
+  border:none; 
+  font-family: 'Lato Semi-Bold',sans-serif; 
+  resize: none;
+  color:black;
+  font-size:2.8vw;
+  padding-left:0.5vw;
+  height:10.8vw;
+}
+
+.sendButton{
+  border-radius: 0.5vw;
+  background-color:#0EbE68;
+  padding-bottom:1vw;
+  padding-top:1vw; 
+  padding-left:2vw;
+  padding-right:2vw;
+  color:white;
+  font-family: 'Lato Semi-Bold',sans-serif;
+  font-size:4vw;
+  align-self:center;
+  margin-bottom:0vw;
+  border:none;
+  text-decoration: none;
+  text-align:center;
+}
+
+#fontContato{
+  color:white;
+  font-size:5.5vw;
+}
+}
