@@ -1,4 +1,4 @@
-body{
+body { 
   width: 100vw; 
   height: 100vh;
   font-family: 'Lato',sans-serif; 
@@ -99,18 +99,103 @@ a:link {
   text-align: center;
 }
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides, .mySlides-mobile {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin: 0 5vw 0 5vw;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 42px;
+  transition: 0.5s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.servicos-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.1);
+  color: #8CCCBD;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.dots {
+  padding-top: 45px;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #0C874B;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.8s;
+  animation-name: fade;
+  animation-duration: 0.8s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}
+}
+
 .sobre-nos{
   height: auto;
   width:auto;
-  background-color: #F2F2F2;/*#F2F2F2*/
+  background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
 }
 
 .fontCabecalho{
   color:#272727;
-  font-size:4vw;
-  margin-top:2vw;
+  font-size:2em;
   margin-right: 4vw;
 }
 .sobre-nosFonts{
@@ -124,16 +209,18 @@ a:link {
   text-align:center;
   margin-top:1vw;
 }
+
 .sobre-nosplanta{
   display: flex;
   align-self: center;
 }
+
 .folha{
-  height:5em;
-  width:4.5em;
-  margin-top:1.5vw;
-  margin-right:2vw;
+  height:3em;
+  width:3em;
+  padding-right: 10px;
 }
+
 .mvvimages{
   height:8em;
   width:8em;
@@ -160,7 +247,6 @@ a:link {
   color:#272727;
   font-size: 2vw;
   margin-top: 2vw;
-  margin-bottom:2vw;
 }
 
 .missao{
@@ -184,7 +270,6 @@ a:link {
 #eyesize{
   font-size: 8em;
 }
-
 @media screen and (max-width:768px) {
   .banner div {
     height: 70%;
@@ -202,9 +287,269 @@ a:link {
   color:#8CCCBD;
 }
 
+.contato {
+  background: url('../images/contatos.jpg') no-repeat center;
+  background-size: cover;
+  height:35vw;
+  width:auto;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-direction:column;
+}
+
+.form {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:100vw;
+}
+
+.contatoForm {
+  display:flex;
+  justify-content: center;
+  width:100vw;
+  align-items:center;
+  margin-bottom:2vw;
+}
+
+.rightForm {
+  display:flex;
+  flex-direction:column;
+  width:35vw;
+  height:15vw;
+  margin-left:3vw;
+}
+
+.leftForm {
+  display:flex;
+  flex-direction: column;
+  width:35vw;
+  height:15vw;
+  margin-right:3vw;
+}
+.msgField {
+  border-radius:0.2vw;
+  border:none;
+  color:black;
+  font-size:1.2vw;
+  padding-left:0.5vw;
+  padding-top:0.5vw;
+  padding-bottom: 1vw;
+  font-family: 'Lato Semi-Bold',sans-serif;
+}
+
+.biggerMsgField {
+  border-radius:0.2vw;
+  border:none; 
+  font-family: 'Lato Semi-Bold',sans-serif; 
+  resize: none;
+  color:black;
+  font-size:1.2vw;
+  padding-left:0.5vw;
+  height:10.8vw;
+}
+
+.sendButton {
+  border-radius: 0.3vw;
+  background-color:#0EbE68;
+  padding-bottom:0.5vw;
+  padding-top:0.5vw; 
+  padding-left:1vw;
+  padding-right:1vw;
+  color:white;
+  font-family: 'Lato Semi-Bold',sans-serif;
+  font-size:1.5vw;
+  align-self:center;
+  margin-bottom:1.5vw;
+  border:none;
+  text-decoration: none;
+  text-align:center;
+}
+
+#fontContato {
+  color:white;
+  font-size:2.5vw;
+}
+
+
+@media screen and (max-width:910px) {
+.contato{
+  background: url('../images/contatos.jpg') no-repeat center;
+  background-size: cover;
+  height:55vw;
+  width:auto;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction:column;
+}
+
+.form {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:100vw;
+}
+.contatoForm {
+  display:flex;
+  justify-content: center;
+  width:100vw;
+  align-items:center;
+  height: auto;
+}
+
+.rightForm {
+  display:flex;
+  flex-direction:column;
+  width:35vw;
+  height:auto;
+  margin-left:3vw;
+}
+
+.leftForm {
+  display:flex;
+  flex-direction: column;
+  width:35vw;
+  height:auto;
+  margin-right:3vw;
+}
+.msgField {
+  border-radius:0.2vw;
+  border:none;
+  color:black;
+  font-size:2vw;
+  padding-left:0.5vw;
+  padding-top:0.5vw;
+  padding-bottom: 1vw;
+  font-family: 'Lato Semi-Bold',sans-serif;
+}
+
+.biggerMsgField {
+  border-radius:0.2vw;
+  border:none; 
+  font-family: 'Lato Semi-Bold',sans-serif; 
+  resize: none;
+  color:black;
+  font-size:2vw;
+  padding-left:0.5vw;
+  padding-bottom:4.5vw;
+}
+
+.sendButton {
+  border-radius: 0.3vw;
+  background-color:#0EbE68;
+  padding-bottom:0.5vw;
+  padding-top:0.5vw; 
+  padding-left:1vw;
+  padding-right:1vw;
+  color:white;
+  font-family: 'Lato Semi-Bold',sans-serif;
+  font-size:2.5vw;
+  align-self:center;
+  margin-top:0;
+  border:none;
+  text-decoration: none;
+  text-align:center;
+}
+
+#fontContato {
+  color:white;
+  font-size:3.5vw;
+}
+}
+
+@media screen and (max-width:414px){
+.contato {
+  background: url('../images/contatos.jpg') no-repeat center;
+  background-size: cover;
+  height:110vw;
+  width:auto;
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content: space-around;
+}
+
+.form {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:100vw;
+}
+.contatoForm {
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  width:auto;
+  align-items:center;
+  margin-bottom:4vw;
+  height:auto;
+}
+
+.rightForm {
+  display:flex;
+  flex-direction:column;
+  width:55vw;
+  height:auto;
+  margin-left:0vw;
+}
+
+.leftForm {
+  display:flex;
+  flex-direction: column;
+  width:55vw;
+  height:auto;
+  margin-right:0vw;
+}
+.msgField {
+  border-radius:0.5vw;
+  border:none;
+  color:black;
+  font-size:2.8vw;
+  padding-left:0.5vw;
+  padding-top:0.5vw;
+  padding-bottom: 1vw;
+  font-family: 'Lato Semi-Bold',sans-serif;
+}
+
+.biggerMsgField  {
+  border-radius:0.5vw;
+  border:none; 
+  font-family: 'Lato Semi-Bold',sans-serif; 
+  resize: none;
+  color:black;
+  font-size:2.8vw;
+  padding-left:0.5vw;
+  height:10.8vw;
+}
+
+.sendButton {
+  border-radius: 0.5vw;
+  background-color:#0EbE68;
+  padding-bottom:1vw;
+  padding-top:1vw; 
+  padding-left:2vw;
+  padding-right:2vw;
+  color:white;
+  font-family: 'Lato Semi-Bold',sans-serif;
+  font-size:4vw;
+  align-self:center;
+  margin-bottom:0vw;
+  border:none;
+  text-decoration: none;
+  text-align:center;
+}
+
+#fontContato {
+  color:white;
+  font-size:5.5vw;
+}
+}
+
 footer {
-  width: 100vw;
-  height: 40vh;
+  width: auto;
+  height: 350px;
   /*background-color: #F2F2F2;*/
   color: #575757;
 }
@@ -213,7 +558,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1vw 5vw 1vw 5vw;
+  padding: 30px 5vw 30px 5vw;
 }
 
 .footer-logo img {
@@ -247,11 +592,6 @@ footer {
   margin-left: 1vw;
 }
 
-/*#idMap {
-  width: 20vw;
-  height: 30vh;
-}*/
-
 .map i {
    font-size: 1.2em;
    margin-bottom: 3.5vh;
@@ -263,20 +603,89 @@ footer {
 }
 
 .copyright {
- /* margin-left: 5vw;
-  margin-right: 5vw;*/
-  margin: 1vw 5vw 1vw 5vw;
   border-top: 1px solid rgba(0, 0, 0, .1);
+  padding: 30px 5vw 30px 5vw;
 }
 
 .copyright p {
   margin-top: 3.5vh;
 }
 
+.servicos{
+  width:100vw;
+}
 
+.servicos-planta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.bloco{
+  width:250px;
+  height:440px;
+  border:1px solid gray;
+  text-align:center;
+  border-radius:8px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+
+.fotoServicos{
+  width: auto;
+  height: auto;
+  max-height: 160px;
+}
+
+.fontServicos{
+  font-weight: 600;
+  font-size: 18px;
+  color: #575757;
+  height: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fontServicosMenor{
+  color: #A8A8A8;
+  font-size: 16px;
+  height: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.buttonServicos{
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color:#0EbE68;
+  height: 8%;
+  width: 45%;
+  margin-bottom: 10px;
+  align-self:center;
+}
+
+.contract{
+  font-weight: 600;
+  color:white;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 984px) {
+  #servicos3 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 984px) {
+  #servicos1 {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 880px) {
-
   .hamburguer {
     display: block;
     float: right;
@@ -436,278 +845,4 @@ footer {
   .sobre-nosFonts{
     text-align:center;
   }
-} 
-
-
-.contato{
-  background: url('../images/contatos.jpg') no-repeat center;
-  background-size: cover;
-  height:35vw;
-  width:auto;
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  flex-direction:column;
-}
-
-.form{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  width:100vw;
-}
-.contatoForm{
-  display:flex;
-  justify-content: center;
-  width:100vw;
-  align-items:center;
-  margin-bottom:2vw;
-}
-
-.rightForm{
-  display:flex;
-  flex-direction:column;
-  width:35vw;
-  height:15vw;
-  margin-left:3vw;
-}
-
-.leftForm{
-  display:flex;
-  flex-direction: column;
-  width:35vw;
-  height:15vw;
-  margin-right:3vw;
-}
-.msgField{
-  border-radius:0.2vw;
-  border:none;
-  color:black;
-  font-size:1.2vw;
-  padding-left:0.5vw;
-  padding-top:0.5vw;
-  padding-bottom: 1vw;
-  font-family: 'Lato Semi-Bold',sans-serif;
-}
-
-.biggerMsgField{
-  border-radius:0.2vw;
-  border:none; 
-  font-family: 'Lato Semi-Bold',sans-serif; 
-  resize: none;
-  color:black;
-  font-size:1.2vw;
-  padding-left:0.5vw;
-  height:10.8vw;
-}
-
-.sendButton{
-  border-radius: 0.3vw;
-  background-color:#0EbE68;
-  padding-bottom:0.5vw;
-  padding-top:0.5vw; 
-  padding-left:1vw;
-  padding-right:1vw;
-  color:white;
-  font-family: 'Lato Semi-Bold',sans-serif;
-  font-size:1.5vw;
-  align-self:center;
-  margin-bottom:1.5vw;
-  border:none;
-  text-decoration: none;
-  text-align:center;
-}
-
-#fontContato{
-  color:white;
-  font-size:2.5vw;
-}
-
-
-@media screen and (max-width:910px){
-
-
-  .contato{
-  background: url('../images/contatos.jpg') no-repeat center;
-  background-size: cover;
-  height:55vw;
-  width:auto;
-  display: flex;
-  align-items:center;
-  justify-content: space-around;
-  flex-direction:column;
-}
-
-.form{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  width:100vw;
-}
-.contatoForm{
-  display:flex;
-  justify-content: center;
-  width:100vw;
-  align-items:center;
-  height: auto;
-}
-
-.rightForm{
-  display:flex;
-  flex-direction:column;
-  width:35vw;
-  height:auto;
-  margin-left:3vw;
-}
-
-.leftForm{
-  display:flex;
-  flex-direction: column;
-  width:35vw;
-  height:auto;
-  margin-right:3vw;
-}
-.msgField{
-  border-radius:0.2vw;
-  border:none;
-  color:black;
-  font-size:2vw;
-  padding-left:0.5vw;
-  padding-top:0.5vw;
-  padding-bottom: 1vw;
-  font-family: 'Lato Semi-Bold',sans-serif;
-}
-
-.biggerMsgField{
-  border-radius:0.2vw;
-  border:none; 
-  font-family: 'Lato Semi-Bold',sans-serif; 
-  resize: none;
-  color:black;
-  font-size:2vw;
-  padding-left:0.5vw;
-  padding-bottom:4.5vw;
-}
-
-.sendButton{
-  border-radius: 0.3vw;
-  background-color:#0EbE68;
-  padding-bottom:0.5vw;
-  padding-top:0.5vw; 
-  padding-left:1vw;
-  padding-right:1vw;
-  color:white;
-  font-family: 'Lato Semi-Bold',sans-serif;
-  font-size:2.5vw;
-  align-self:center;
-  margin-top:0;
-  border:none;
-  text-decoration: none;
-  text-align:center;
-}
-
-#fontContato{
-  color:white;
-  font-size:3.5vw;
-}
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-@media screen and (max-width:414px){
-  .contato{
-  background: url('../images/contatos.jpg') no-repeat center;
-  background-size: cover;
-  height:110vw;
-  width:auto;
-  display: flex;
-  align-items:center;
-  flex-direction:column;
-  justify-content: space-around;
-}
-
-.form{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  width:100vw;
-}
-.contatoForm{
-  display:flex;
-  justify-content:center;
-  flex-direction: column;
-  width:auto;
-  align-items:center;
-  margin-bottom:4vw;
-  height:auto;
-}
-
-.rightForm{
-  display:flex;
-  flex-direction:column;
-  width:55vw;
-  height:auto;
-  margin-left:0vw;
-}
-
-.leftForm{
-  display:flex;
-  flex-direction: column;
-  width:55vw;
-  height:auto;
-  margin-right:0vw;
-}
-.msgField{
-  border-radius:0.5vw;
-  border:none;
-  color:black;
-  font-size:2.8vw;
-  padding-left:0.5vw;
-  padding-top:0.5vw;
-  padding-bottom: 1vw;
-  font-family: 'Lato Semi-Bold',sans-serif;
-}
-
-.biggerMsgField{
-  border-radius:0.5vw;
-  border:none; 
-  font-family: 'Lato Semi-Bold',sans-serif; 
-  resize: none;
-  color:black;
-  font-size:2.8vw;
-  padding-left:0.5vw;
-  height:10.8vw;
-}
-
-.sendButton{
-  border-radius: 0.5vw;
-  background-color:#0EbE68;
-  padding-bottom:1vw;
-  padding-top:1vw; 
-  padding-left:2vw;
-  padding-right:2vw;
-  color:white;
-  font-family: 'Lato Semi-Bold',sans-serif;
-  font-size:4vw;
-  align-self:center;
-  margin-bottom:0vw;
-  border:none;
-  text-decoration: none;
-  text-align:center;
-}
-
-#fontContato{
-  color:white;
-  font-size:5.5vw;
-}
 }

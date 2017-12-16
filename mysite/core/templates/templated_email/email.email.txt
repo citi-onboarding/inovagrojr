@@ -1,7 +1,0 @@
-{% block subject %}{{assunto}}{% endblock %}
-{% block plain %}
-O e-mail foi enviado por:{{ nome }} 
-O telefone de {{nome}} é: {{telefone}}
-Conheceu a Inovagro Jr assim: {{comoconheceu}} 
-E a mensagem recebida é: {{ mensagem }}
-{% endblock %}

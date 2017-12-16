@@ -8,8 +8,6 @@ from templated_email import send_templated_mail
 
 def index(request):
 	if request.method == 'POST':
-		contato = ContactForm(request.POST)
-		if contato.is_valid:
 			nome = request.POST.get('nome')
 			email = request.POST.get('email')
 			telefone = request.POST.get('telefone')
@@ -27,10 +25,8 @@ def index(request):
             		'comoconheceu':comoconheceu,
             		'mensagem':mensagem,
             		'assunto':assunto,
+            		'email':email,
         		},
 			)
         
-	else:
-		contato = ContactForm()
-
 	return render(request,'index.html',)

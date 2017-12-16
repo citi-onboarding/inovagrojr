@@ -13,7 +13,6 @@
 <body>
 	<nav class="navbar navbar-colorful navbar-transparent" id="idNavbar">
 		<a class="navbar-logo" href="/">
-			<!-- <img src="http://via.placeholder.com/200x50"> -->
 			<img src="{% static "images/logo1.png" %}">
 		</a>
 		<div class="navbar-collapse" id="navbar">
@@ -37,8 +36,303 @@
   		<a href="#" id="contact-button">Conheça-nos!</a>
   	</div>
   
-  	<div class="section-container" id ="servicos">
-	</div>
+  	<div class="servicos-container" id="idServicos">
+  		<div class = "servicos-planta">
+  			<!-- <img class = "folha" src= "{% static "images/folhabranca.png" %}"> -->
+  			<img class = "folha" src="{% static "images/folha.png" %}">
+  			<h1 class="fontCabecalho">Serviços</h1>
+  		</div>
+  		<div class="servicos slideshow-container" id="servicos3">
+			<div class="mySlides fade">
+				<div class="bloco">
+					<p class="fontServicos">Paisagismo</p>
+					<img src="{% static "images/services/paisagismo.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Alia técnica e arte para criar ambientes atrativos do ponto de vista estético, funcional e natural através de plantas ornamentais como árvores, arbustos, forrações e flores. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+				<div class="bloco">
+					<p class="fontServicos">Hidroponia</p>
+					<img src="{% static "images/services/hidroponia.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Realização, implantação e manutenção de sistemas sem utilização de solos, com uso de soluções nutritivas, adequando-os para diversos ambientes e fins. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+				<div class="bloco">
+					<p class="fontServicos">Análise de solo</p>
+					<img src="{% static "images/services/analisesolo.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Identificação dos componentes físicos e químicos do solo para avaliar o nível de deficiência de nutrientes e determinar as quantidades a serem aplicadas na adubação e correção do PH. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="bloco">
+					<p class="fontServicos">Implantação e manutenção de pomares, olerícolas, florestais e pastagens</p>
+					<img src="{% static "images/services/manutencao.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Implantar lavouras auxiliando nos cuidados pré e pós-plantio, tais como: escolha de sementes ou muda, poda, manejo da irrigação e tratos culturais. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+				<div class="bloco">
+					<p class="fontServicos">Identificação e controle de plantas invasoras, doenças e pragas</p>
+					<img src="{% static "images/services/praga.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Identificar plantas invasoras, agentes patogênicos e insetos pragas que ocasionam a diminuição da produção e em razão disso orientar o controle eficaz dos mesmos visando a produção máxima da sua lavoura. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+				<div class="bloco">
+					<p class="fontServicos">Planejamento, otimização de projetos agrícolas</p>
+					<img src="{% static "images/services/projetos.png" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Planejamento: Guiar os produtores na implantação de uma lavoura, onde será relatado a viabilidade e estruturação desta, melhores épocas para o plantio e resultados esperados. Otimização: fundamenta-se no estudo e orientação de práticas mais assertivas para projetos agrícolas já em funcionamento. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="bloco">
+					<p class="fontServicos">Diagnóstico ambiental</p>
+					<img src="{% static "images/services/diagnostico.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Identificação de parâmetros de determinada área, tais como características do meio antrópico, biótico e físico, fornecendo conhecimento suficiente para identificar e avaliar os impactos causados por projetos agrícolas ou obras civis. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+				<div class="bloco">
+					<p class="fontServicos">Elaboração de estudos ambientais</p>
+					<img src="{% static "images/services/estudos.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Estudos para atender exigências ambientais de nível federal, estadual e municipal para projetos agropecuários, engenharias civis e outros. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+				<div class="bloco">
+					<p class="fontServicos">CAR</p>
+					<img src="{% static "images/services/car.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Elaboração do Cadastro Ambiental Rural conforme exigências da lei. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="bloco">
+					<p class="fontServicos">Elaboração de Programa de Gerenciamento de Resíduos Sólidos</p>
+					<img src="{% static "images/services/residuos.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Realizar um levantamento dos resíduos sólidos produzidos na implantação e elaboração de um projeto seja ele de fim agropecuário, construção civil e industriais. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+				<div class="bloco">
+					<p class="fontServicos">Elaboração de Programa de Recuperação de Área Degradada</p>
+					<img src="{% static "images/services/degradada.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Elaboração de um programa para recuperar áreas que foram degradadas por atividades agrícolas, industriais e de construção civil. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+				<div class="bloco">
+					<p class="fontServicos">Licenciamento Ambiental de Empreendimentos</p>
+					<img src="{% static "images/services/licenciamento.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Acessória para obtenção das licenças ambientais dos empreendimentos agrícolas, industriais e de construção civis. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="bloco">
+					<p class="fontServicos">Elaboração de Projetos Florestais de Reposição e Compensação Ambientais</p>
+					<img src="{% static "images/services/reposicao.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Elaboração de um inventário florestal para que seja permitindo a realização de atividades de supressão vegetal. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+	  	</div>
+
+		<!-- SERVICOS MOBILE -->
+
+	  	<div class="servicos slideshow-container" id="servicos1">
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Paisagismo</p>
+					<img src="{% static "images/services/paisagismo.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Alia técnica e arte para criar ambientes atrativos do ponto de vista estético, funcional e natural através de plantas ornamentais como árvores, arbustos, forrações e flores. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Hidroponia</p>
+					<img src="{% static "images/services/hidroponia.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Realização, implantação e manutenção de sistemas sem utilização de solos, com uso de soluções nutritivas, adequando-os para diversos ambientes e fins. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Análise de solo</p>
+					<img src="{% static "images/services/analisesolo.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Identificação dos componentes físicos e químicos do solo para avaliar o nível de deficiência de nutrientes e determinar as quantidades a serem aplicadas na adubação e correção do PH. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Implantação e manutenção de pomares, olerícolas, florestais e pastagens</p>
+					<img src="{% static "images/services/manutencao.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Implantar lavouras auxiliando nos cuidados pré e pós-plantio, tais como: escolha de sementes ou muda, poda, manejo da irrigação e tratos culturais. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Identificação e controle de plantas invasoras, doenças e pragas</p>
+					<img src="{% static "images/services/praga.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Identificar plantas invasoras, agentes patogênicos e insetos pragas que ocasionam a diminuição da produção e em razão disso orientar o controle eficaz dos mesmos visando a produção máxima da sua lavoura. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Planejamento, otimização de projetos agrícolas</p>
+					<img src="{% static "images/services/projetos.png" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Planejamento: Guiar os produtores na implantação de uma lavoura, onde será relatado a viabilidade e estruturação desta, melhores épocas para o plantio e resultados esperados. Otimização: fundamenta-se no estudo e orientação de práticas mais assertivas
+						para projetos agrícolas já em funcionamento. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Diagnóstico ambiental</p>
+					<img src="{% static "images/services/diagnostico.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Identificação de parâmetros de determinada área, tais como características do meio antrópico, biótico e físico, fornecendo conhecimento suficiente para identificar e avaliar os impactos causados por projetos agrícolas ou obras civis. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Elaboração de estudos ambientais</p>
+					<img src="{% static "images/services/estudos.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Estudos para atender exigências ambientais de nível federal, estadual e municipal para projetos agropecuários, engenharias civis e outros. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">CAR</p>
+					<img src="{% static "images/services/car.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Elaboração do Cadastro Ambiental Rural conforme exigências da lei. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Elaboração de Programa de Gerenciamento de Resíduos Sólidos</p>
+					<img src="{% static "images/services/residuos.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Realizar um levantamento dos resíduos sólidos produzidos na implantação e elaboração de um projeto seja ele de fim agropecuário, construção civil e industriais. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Elaboração de Programa de Recuperação de Área Degradada</p>
+					<img src="{% static "images/services/degradada.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Elaboração de um programa para recuperar áreas que foram degradadas por atividades agrícolas, industriais e de construção civil. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Licenciamento Ambiental de Empreendimentos</p>
+					<img src="{% static "images/services/licenciamento.jpeg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Acessória para obtenção das licenças ambientais dos empreendimentos agrícolas, industriais e de construção civis. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+			<div class="mySlides-mobile fade">
+				<div class="bloco">
+					<p class="fontServicos">Elaboração de Projetos Florestais de Reposição e Compensação Ambientais</p>
+					<img src="{% static "images/services/reposicao.jpg" %}" class="fotoServicos">
+					
+					<p class="fontServicosMenor"> Elaboração de um inventário florestal para que seja permitindo a realização de atividades de supressão vegetal. </p>
+					<button type="button" class="buttonServicos">
+			         <p class="contract">Contratar</p>
+			      </button>
+				</div>
+			</div>
+	  	</div>
+		
+		<!-- The dots/circles -->
+		<div class="dots">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>	
+	  	<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  	</div>
   
   	<div class="sobre-nos">
   		<div class = "sobre-nosplanta">
@@ -117,7 +411,6 @@
   		<div class="footer-content">
   			<div class="col1">
   				<div class="footer-logo">
-					<!-- <img src="http://via.placeholder.com/250x150"> -->
 					<img src="{% static "images/logo2.png" %}">
 				</div>
   			</div>
@@ -148,7 +441,7 @@
   		</div>
 	</footer>
 
-	<script src={%static "js/index.js" %}></script>
+	<script src="{% static "js/index.js" %}"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9mxoPANZovp1gpIAi_On1g4ZU75JsiiI&callback=initMap"
   type="text/javascript"></script>
 </body>
