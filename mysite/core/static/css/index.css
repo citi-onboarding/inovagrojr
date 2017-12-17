@@ -26,6 +26,10 @@ body {
   max-width: 150px;
 }
 
+/*.navbar-logo img:hover {
+  max-width: 160px;
+}*/
+
 .navbar.navbar-colorful.navbar-transparent {
   background-color : rgba(0,0,0,.6);
 }
@@ -39,6 +43,11 @@ body {
   text-align: right;
   font-size: 18px;
   font-weight: 500;
+}
+
+.navbar a:hover {
+	color: #8CCCBD;
+	font-weight: 600;
 }
 
 ul li {
@@ -89,6 +98,10 @@ a:link {
     float: right;
     margin: 5vw;
   }
+  
+  .hamburguer:hover {
+		color: bold;
+	}
 
   .navbar-logo {
 	  margin-left: 5vw;
@@ -222,6 +235,82 @@ a:link {
 @keyframes fade {
   from {opacity: .3} 
   to {opacity: 1}
+}
+
+.bloco {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  width: 260px;
+  height: 440px;
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.fotoServicos{
+  width: auto;
+  height: auto;
+  max-height: 170px;
+}
+
+.fontServicos{
+  font-weight: 600;
+  font-size: 18px;
+  color: #575757;
+  height: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fontServicosMenor {
+  color: #A8A8A8;
+  font-size: 16px;
+  height: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.buttonServicos{
+  border: none;
+  border-radius: 4px;
+  background-color:#0EbE68;
+  height: 8%;
+  width: 45%;
+  margin-bottom: 5px;
+  align-self:center;
+  display:flex;
+  justify-content: center;
+}
+
+.contract {
+  font-weight: 600;
+  color:white;
+  font-size: 18px;
+  align-self:center;
+}
+
+@media screen and (max-width: 984px) {
+  #servicos3 {
+    display: none;
+  }
+  
+  .bloco {
+  	width: 270px;
+  	height: 460px;
+  }
+
+  .prev, .next {
+  	margin: 0 5vw 0 5vw;
+  }
+}
+
+@media screen and (min-width: 984px) {
+  #servicos1 {
+    display: none;
+  }
 }
 
 /* Sobre Nós */
@@ -365,67 +454,63 @@ a:link {
   display:flex;
   flex-direction:column;
   align-items: center;
+}
+
+.contatoForm {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   width: 100vw;
-  padding-top: 40px;
-}
-
-.contatoForm {
-  display:flex;
-  justify-content: center;
-  width:100vw;
-  align-items:center;
-  margin-bottom:2vw;
+  margin-bottom:40px;
 }
 
 .rightForm {
   display:flex;
   flex-direction:column;
-  width:35vw;
-  height:15vw;
-  margin-left:3vw;
+  width:450px;
+  height:200px;
+  margin-left:30px;
+  margin-right: 40px;
 }
 
 .leftForm {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  width:35vw;
-  height:15vw;
-  margin-right:3vw;
+  width: 450px;
+  height: 200px;
+  padding-left: 40px;
 }
+
 .msgField {
   border-radius:0.2vw;
   border:none;
   color:black;
-  font-size:1.2vw;
-  padding-left:0.5vw;
-  padding-top:0.5vw;
-  padding-bottom: 1vw;
+  font-size:14px;
   font-family: 'Lato Semi-Bold',sans-serif;
+  padding: 5px;
+  height: 40px;
+  max-width: auto;
 }
 
 .biggerMsgField {
   border-radius:0.2vw;
   border:none; 
   font-family: 'Lato Semi-Bold',sans-serif; 
-  resize: none;
-  color:black;
-  font-size:1.2vw;
-  padding-left:0.5vw;
-  height:10.8vw;
+  font-size:14px;
+  padding: 5px;
+  height:-webkit-fill-available;
+  max-width: auto;
 }
 
 .sendButton {
   border-radius: 0.3vw;
   background-color:#0EbE68;
-  padding-bottom:0.5vw;
-  padding-top:0.5vw; 
-  padding-left:1vw;
-  padding-right:1vw;
+  width: auto;
+  height: 45px;
   color:white;
   font-family: 'Lato Semi-Bold',sans-serif;
-  font-size:1.5vw;
+  font-size:20px;
   align-self:center;
-  margin-bottom:1.5vw;
   border:none;
   text-decoration: none;
   text-align:center;
@@ -433,182 +518,28 @@ a:link {
 
 #fontContato {
   color:white;
-  font-size:2.5vw;
+  font-size: 2.5em;
 }
 
+@media screen and (max-width:900px) {
+	.contato {
+		height: auto;
+	}
 
-@media screen and (max-width:910px) {
-.contato{
-  background: url('../images/contatos.jpg') no-repeat center;
-  background-size: cover;
-  height:55vw;
-  width:auto;
-  display: flex;
-  align-items:center;
-  justify-content: space-around;
-  flex-direction:column;
-}
+	.contatoForm {
+		flex-direction: column;
+		align-items: center;
+	}
 
-.form {
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  width:100vw;
-}
-.contatoForm {
-  display:flex;
-  justify-content: center;
-  width:100vw;
-  align-items:center;
-  height: auto;
-}
+	.leftForm, .rightForm {
+		margin: 0px;
+		padding: 0px;
+		width: 300px;
+	}
 
-.rightForm {
-  display:flex;
-  flex-direction:column;
-  width:35vw;
-  height:auto;
-  margin-left:3vw;
-}
-
-.leftForm {
-  display:flex;
-  flex-direction: column;
-  width:35vw;
-  height:auto;
-  margin-right:3vw;
-}
-.msgField {
-  border-radius:0.2vw;
-  border:none;
-  color:black;
-  font-size:2vw;
-  padding-left:0.5vw;
-  padding-top:0.5vw;
-  padding-bottom: 1vw;
-  font-family: 'Lato Semi-Bold',sans-serif;
-}
-
-.biggerMsgField {
-  border-radius:0.2vw;
-  border:none; 
-  font-family: 'Lato Semi-Bold',sans-serif; 
-  resize: none;
-  color:black;
-  font-size:2vw;
-  padding-left:0.5vw;
-  padding-bottom:4.5vw;
-}
-
-.sendButton {
-  border-radius: 0.3vw;
-  background-color:#0EbE68;
-  padding-bottom:0.5vw;
-  padding-top:0.5vw; 
-  padding-left:1vw;
-  padding-right:1vw;
-  color:white;
-  font-family: 'Lato Semi-Bold',sans-serif;
-  font-size:2.5vw;
-  align-self:center;
-  margin-top:0;
-  border:none;
-  text-decoration: none;
-  text-align:center;
-}
-
-#fontContato {
-  color:white;
-  font-size:3.5vw;
-}
-}
-
-@media screen and (max-width:414px){
-.contato {
-  background: url('../images/contatos.jpg') no-repeat center;
-  background-size: cover;
-  height:110vw;
-  width:auto;
-  display: flex;
-  align-items:center;
-  flex-direction:column;
-  justify-content: space-around;
-}
-
-.form {
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  width:100vw;
-}
-.contatoForm {
-  display:flex;
-  justify-content:center;
-  flex-direction: column;
-  width:auto;
-  align-items:center;
-  margin-bottom:4vw;
-  height:auto;
-}
-
-.rightForm {
-  display:flex;
-  flex-direction:column;
-  width:55vw;
-  height:auto;
-  margin-left:0vw;
-}
-
-.leftForm {
-  display:flex;
-  flex-direction: column;
-  width:55vw;
-  height:auto;
-  margin-right:0vw;
-}
-.msgField {
-  border-radius:0.5vw;
-  border:none;
-  color:black;
-  font-size:2.8vw;
-  padding-left:0.5vw;
-  padding-top:0.5vw;
-  padding-bottom: 1vw;
-  font-family: 'Lato Semi-Bold',sans-serif;
-}
-
-.biggerMsgField  {
-  border-radius:0.5vw;
-  border:none; 
-	font-family: 'Lato Semi-Bold',sans-serif; 
-  resize: none;
-  color:black;
-  font-size:2.8vw;
-  padding-left:0.5vw;
-  height:10.8vw;
-}
-
-.sendButton {
-  border-radius: 0.5vw;
-  background-color:#0EbE68;
-  padding-bottom:1vw;
-  padding-top:1vw; 
-  padding-left:2vw;
-  padding-right:2vw;
-  color:white;
-  font-family: 'Lato Semi-Bold',sans-serif;
-  font-size:4vw;
-  align-self:center;
-  margin-bottom:0vw;
-  border:none;
-  text-decoration: none;
-  text-align:center;
-}
-
-#fontContato {
-  color:white;
-  font-size:5.5vw;
-  }
+	.form {
+		margin-top: 40px;
+	}
 }
 
 /* Footer */
@@ -671,83 +602,6 @@ footer {
   margin-top: 10px;
 }
 
-.bloco {
-  width: 260px;
-  height: 440px;
-  border: 1px solid gray;
-  text-align: center;
-  border-radius: 8px;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: 40px;
-}
-
-.fotoServicos{
-  width: auto;
-  height: auto;
-  max-height: 170px;
-}
-
-.fontServicos{
-  font-weight: 600;
-  font-size: 18px;
-  color: #575757;
-  height: 35px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.fontServicosMenor {
-  color: #A8A8A8;
-  font-size: 16px;
-  height: 100px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.buttonServicos{
-  border: none;
-  border-radius: 4px;
-  background-color:#0EbE68;
-  height: 8%;
-  width: 45%;
-  margin-bottom: 5px;
-  align-self:center;
-  display:flex;
-  justify-content: center;
-}
-
-.contract {
-  font-weight: 600;
-  color:white;
-  font-size: 18px;
-  align-self:center;
-}
-
-@media screen and (max-width: 984px) {
-  #servicos3 {
-    display: none;
-  }
-  
-  .bloco {
-  	width: 270px;
-  	height: 460px;
-  }
-
-  .prev, .next {
-  	margin: 0 5vw 0 5vw;
-  }
-}
-
-@media screen and (min-width: 984px) {
-  #servicos1 {
-    display: none;
-  }
-}
-
-
-
 @media screen and (max-width: 880px) {
   .footer-content {
     flex-direction: column;
@@ -778,81 +632,3 @@ footer {
     margin-top: 15px;
   }
 }
-
-/*@media screen and (max-width:1120px){
-  .folha {
-    height: 3.5em;
-    width: 3.0em;
-  }
-  
-  #eyesize {
-    font-size: 7em;
-  }
-
-  .mvvimages{
-    height:7em;
-    width:7em;
-  }
-
-}
-
-@media screen and (max-width:920px){
-  .folha{
-    height:3.0em;
-    width:2.5em;
-  }
-}
-
-@media screen and (max-width:880px){
-  .folha{
-    height:2.2em;
-    width:1.8em;
-  }
-
-  #eyesize{
-    font-size: 5em;
-  }
-
-.mvvimages{
-  height:5em;
-  width:5em;
-  }
-}
-
-@media screen and (max-width:600px){
-  .folha{
-    height:1.9em;
-    width:1.6em;
-  }
-  #eyesize{
-  font-size: 3em;
-}
-
-.mvvimages{
-  height:3em;
-  width:3em;
-}
-}
-
-@media screen and (max-width:580px){
-  .folha{
-    height:1.6em;
-    width:1.2em;
-  }
-
-  #eyesize{
-  font-size: 2em;
-}
-
-.mvvimages{
-  height:2em;
-  width:2em;
-}
-}
-
-@media screen and (max-width:400px){
-  .folha{
-    height:1.2em;
-    width:0.8em;
-  }
-}*/
