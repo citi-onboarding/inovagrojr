@@ -4,6 +4,7 @@ body {
   font-family: 'Lato',sans-serif; 
 }
 
+/* navbar */
 .navbar {
   position: fixed;
   display: flex;
@@ -16,7 +17,7 @@ body {
 }
 
 .navbar-logo {
-  margin-left: 5vw;
+  margin-left: 50px;
 }
 
 .navbar-logo img {
@@ -56,7 +57,7 @@ ul li {
   display: block;
   background-color: inherit;
   top: 100%;
-  width: 100vw;
+  width: 100%;
   border-top: 1px solid #575757;
 }
 
@@ -71,7 +72,7 @@ ul li {
 }
 
 .social-media {
-  margin-right: 5vw;
+  margin-right: 50px;
 }
 
 .hamburguer {
@@ -82,10 +83,26 @@ a:link {
   text-decoration: none;
 }
 
-.banner{
+@media screen and (max-width: 880px) {
+  .hamburguer {
+    display: block;
+    float: right;
+    margin: 5vw;
+  }
+
+  .navbar-logo {
+	  margin-left: 5vw;
+	}
+  .navbar-collapse, .social-media {
+    display: none;
+  }
+}
+
+/* banner */
+.banner {
   background: url('../images/banner.jpg') no-repeat center;
   background-size: cover;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,25 +110,51 @@ a:link {
 }
 
 .banner h1 {
-  font-size: 2.3em;
   color: white;
-  margin-bottom: 35px; 
+  font-size: 3em;
   text-align: center;
+  margin-bottom: 45px; 
 }
 
-/* Slideshow container */
+#contact-button {
+  font-size: 22px;
+  color: white;
+  background: #8CCCBD;
+  border-radius: 3px;
+  padding: 8px 12px;
+}
+
+#contact-button:hover {
+  color: #8CCCBD;
+  background: white;
+}
+
+@media screen and (max-width:768px) {
+  .banner div {
+    height: 70%;
+  }
+}
+
+/* serviços */
+.servicos {
+  width: 100vw;
+}
+
+.servicos-planta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides, .mySlides-mobile {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -130,23 +173,21 @@ a:link {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  /*padding-top: 50px;
+  padding-bottom: 60px;*/
+  padding: 70px 0 100px 0;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.1);
   color: #8CCCBD;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor:pointer;
   height: 15px;
@@ -185,124 +226,149 @@ a:link {
   to {opacity: 1}
 }
 
-.sobre-nos{
+/* Sobre Nós */
+.sobre-nos {
   height: auto;
   width:auto;
-  background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
+  padding: 70px 40px 100px 40px;
+  background-color: #F2F2F2;
+  line-height: 30px;
 }
 
-.fontCabecalho{
-  color:#272727;
-  font-size:2em;
-  margin-right: 4vw;
-}
-.sobre-nosFonts{
-  color:#8CCCBD;
-  font-size:3.5vw;
-  margin-top:1vw;
-}
-.mvvfonts {
-  color:#272727;
-  font-size: 2vw;
-  text-align:center;
-  margin-top:1vw;
+.folha {
+  height: 3em;
+  width: 3em;
+  padding-right: 10px;
 }
 
 .sobre-nosplanta{
   display: flex;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.folha{
-  height:3em;
-  width:3em;
-  padding-right: 10px;
+.fontCabecalho {
+  color: #272727;
+  font-size: 2.5em;
 }
 
-.mvvimages{
-  height:8em;
-  width:8em;
+.mvvimages {
+  height: 5em;
+  width: 5em;
 }
 
-.mvv{
+#eyesize {
+  font-size: 5em;
+}
+
+.sobre-nosFonts {
+  color: #8CCCBD;
+  font-size: 2.1em;
+  margin-top: 15px;
+}
+
+.mvvfonts {
+  color:#272727;
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mvv {
   display:flex;
   justify-content: space-around;
+  height: 450px;
 }
 
-.equipeImg{
-  height:31vh;
-  width:29vw;
-  margin-top:10vw;
-  margin-left:13vw;
-  padding-bottom:3vw;
+.missao, .visao, .valores{
+  max-width: 350px;
+  height: 300px;
+  margin-top: 50px;
+  text-align: center;
 }
-.sessaoFoto{
+
+.equipeImg {
+  height: 15em;
+  width: 25em;
+}
+
+.sessaoFoto {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 80px;
 }
 
-.umafonte{
+.inovagroInfo {
+  width: 50%;
+}
+
+.umafonte {
   text-align:left;
   color:#272727;
-  font-size: 2vw;
-  margin-top: 2vw;
+  font-size: 1.3em;
+  margin-top: 35px;
 }
 
-.missao{
-  margin-top:5vw;
-  text-align:center;
-}
-.valores{
-  margin-top:5vw;
-  text-align:center;
-}
-.visao{
-  margin-top:5vw;
-  text-align:center;
-  margin-left:8vw;
-}
-.inovagroInfo{
-  margin-top: 10vw;
-  margin-left: 5vw;
-}
+@media screen and (max-width: 900px){ /*mobile resolution*/
+	.mvv {
+		flex-wrap: wrap;
+		height: auto;
+	}
+  
+  .missao, .visao, .valores {
+		margin-top: 55px;
+		height: auto;
+  }
+  
+  .inovagroInfo {
+    width: auto;
+  }
 
-#eyesize{
-  font-size: 8em;
-}
-@media screen and (max-width:768px) {
-  .banner div {
-    height: 70%;
+  .equipeImg {
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+  }
+  
+  .sessaoFoto{
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 60px;
+  }
+  
+  .sobre-nosFonts, .umafonte{
+		text-align:center;
   }
 }
 
-#contact-button {
-  color: white;
-  background: #8CCCBD;
-  border-radius: 3px;
-  padding: 8px 12px;
-}
-
-.sobre-nosFonts{
-  color:#8CCCBD;
-}
-
+/* Contato */
 .contato {
   background: url('../images/contatos.jpg') no-repeat center;
   background-size: cover;
-  height:35vw;
-  width:auto;
   display: flex;
-  align-items:center;
   justify-content: space-between;
   flex-direction:column;
+  align-items:center;
+  width:auto;
+  height:400px;
+  padding: 70px 40px 100px 40px;
+}
+
+.contatoplanta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
   display:flex;
   flex-direction:column;
   align-items: center;
-  width:100vw;
+  width: 100vw;
+  padding-top: 40px;
 }
 
 .contatoForm {
@@ -516,7 +582,7 @@ a:link {
 .biggerMsgField  {
   border-radius:0.5vw;
   border:none; 
-  font-family: 'Lato Semi-Bold',sans-serif; 
+	font-family: 'Lato Semi-Bold',sans-serif; 
   resize: none;
   color:black;
   font-size:2.8vw;
@@ -544,9 +610,10 @@ a:link {
 #fontContato {
   color:white;
   font-size:5.5vw;
-}
+  }
 }
 
+/* Footer */
 footer {
   width: auto;
   height: 350px;
@@ -558,13 +625,13 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 5vw 30px 5vw;
+  padding: 40px;
 }
 
 .footer-logo img {
   width: auto;
   height: auto;
-  max-width: 320px;
+  max-width: 300px;
 }
 
 .col1, .col2, .col3 {
@@ -572,30 +639,25 @@ footer {
   width: 100%;
 }
 
-.contact ul {
-  float: left;
-}
-
-.contact li {
+.footer-contact li {
   display: block;
 }
 
-.contact i {
+.footer-contact i {
   font-size: 1.2em;
 }
 
-.contact a {
+.footer-contact a {
   color: #575757;
 }
 
-.contact span, .map span {
-  margin-left: 1vw;
+.footer-contact span, .map span {
+  margin-left: 10px;
 }
 
 .map i {
-   font-size: 1.2em;
-   margin-bottom: 3.5vh;
-   padding: 0 0 0 5px;
+  font-size: 1.2em;
+  padding: 10px 0 0 5px;
 }
 
 .address-info {
@@ -604,22 +666,11 @@ footer {
 
 .copyright {
   border-top: 1px solid rgba(0, 0, 0, .1);
-  padding: 30px 5vw 30px 5vw;
+  padding: 15px 40px 30px 40px;
 }
 
 .copyright p {
-  margin-top: 3.5vh;
-}
-
-.servicos{
-  width:100vw;
-}
-
-.servicos-planta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10px;
+  margin-top: 10px;
 }
 
 .bloco{
@@ -685,21 +736,9 @@ footer {
   }
 }
 
+
+
 @media screen and (max-width: 880px) {
-  .hamburguer {
-    display: block;
-    float: right;
-    margin: 5vw;
-  }
-
-  .navbar-collapse {
-    display: none;
-  }
-
-  .social-media {
-    display: none;
-  }
-
   .footer-content {
     flex-direction: column;
   }
@@ -714,6 +753,7 @@ footer {
   }
   .map {
     width: 100%;
+    padding-left: 20px;
   }
   
   .map .fa-map-marker {
@@ -727,23 +767,22 @@ footer {
   .address-info {
     margin-top: 15px;
   }
-}  
-
 }
 
-@media screen and (max-width:1120px){
-  .folha{
-    height:3.5em;
-    width:3.0em;
+/*@media screen and (max-width:1120px){
+  .folha {
+    height: 3.5em;
+    width: 3.0em;
   }
-  #eyesize{
-  font-size: 7em;
-}
+  
+  #eyesize {
+    font-size: 7em;
+  }
 
-.mvvimages{
-  height:7em;
-  width:7em;
-}
+  .mvvimages{
+    height:7em;
+    width:7em;
+  }
 
 }
 
@@ -761,13 +800,13 @@ footer {
   }
 
   #eyesize{
-  font-size: 5em;
-}
+    font-size: 5em;
+  }
 
 .mvvimages{
   height:5em;
   width:5em;
-}
+  }
 }
 
 @media screen and (max-width:600px){
@@ -806,43 +845,4 @@ footer {
     height:1.2em;
     width:0.8em;
   }
-}
-
-@media screen and (max-width: 414px){ /*mobile resolution*/
-    .mvv{
-    flex-direction: column;
-    }
-    .missao{
-    margin-top:5vw;
-    text-align:center;
-    }
-  .valores{
-    margin-top:5vw;
-    text-align:center;
-    }
-  .visao{
-    margin-left:0vw;
-    }
-  .inovagroInfo{
-  margin-top: 4vw;
-  margin-left: 0vw;
-  margin-bottom: 4vw;
-}
-    .equipeImg{
-    height:33vh;
-    width:100vw;
-    margin-top:4vw;
-    margin-left:0vw;
-    padding-bottom:0vw;
-  }
-  .sessaoFoto{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .umafonte{
-    text-align:center;
-  }
-  .sobre-nosFonts{
-    text-align:center;
-  }
-}
+}*/
