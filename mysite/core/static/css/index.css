@@ -160,7 +160,7 @@ a:link {
   position: absolute;
   top: 50%;
   width: auto;
-  margin: 0 5vw 0 5vw;
+  margin: 0 2vw 0 2vw;
   padding: 5px;
   color: black;
   font-weight: bold;
@@ -173,9 +173,7 @@ a:link {
   position: relative;
   display: flex;
   flex-direction: column;
-  /*padding-top: 50px;
-  padding-bottom: 60px;*/
-  padding: 70px 0 100px 0;
+  padding: 70px 0 70px 0;
 }
 
 .next {
@@ -673,22 +671,22 @@ footer {
   margin-top: 10px;
 }
 
-.bloco{
-  width:250px;
-  height:440px;
-  border:1px solid gray;
-  text-align:center;
-  border-radius:8px;
+.bloco {
+  width: 260px;
+  height: 440px;
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 8px;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 5vh;
+  margin-top: 40px;
 }
 
 .fotoServicos{
   width: auto;
   height: auto;
-  max-height: 160px;
+  max-height: 170px;
 }
 
 .fontServicos{
@@ -700,7 +698,7 @@ footer {
   padding-right: 5px;
 }
 
-.fontServicosMenor{
+.fontServicosMenor {
   color: #A8A8A8;
   font-size: 16px;
   height: 100px;
@@ -708,17 +706,17 @@ footer {
   padding-right: 5px;
 }
 
-.buttonServicos{
+.buttonServicos {
   border: 1px solid white;
   border-radius: 4px;
   background-color:#0EbE68;
   height: 8%;
   width: 45%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   align-self:center;
 }
 
-.contract{
+.contract {
   font-weight: 600;
   color:white;
   font-size: 18px;
@@ -727,6 +725,15 @@ footer {
 @media screen and (max-width: 984px) {
   #servicos3 {
     display: none;
+  }
+  
+  .bloco {
+  	width: 270px;
+  	height: 460px;
+  }
+
+  .prev, .next {
+  	margin: 0 5vw 0 5vw;
   }
 }
 

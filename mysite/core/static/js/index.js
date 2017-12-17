@@ -61,11 +61,13 @@ function carouselResponsiveStyle(classname) {
 		slides[slideIndex-1].style.display = "flex";
 		slides[slideIndex-1].style.justifyContent = "space-around";
 		slides[slideIndex-1].style.alignItems = "center";
+		slides[slideIndex-1].style.padding = "0 40px 0 40px";
 	} else {
 		slides[slideIndex-1].style.display = "flex";
 		slides[slideIndex-1].style.flexDirection = "column";
 		slides[slideIndex-1].style.justifyContent = "space-around";
 		slides[slideIndex-1].style.alignItems = "center";
+		slides[slideIndex-1].style.padding = "0 40px 0 40px";
 	}
 }
 
