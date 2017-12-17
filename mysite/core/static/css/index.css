@@ -709,19 +709,22 @@ footer {
 }
 
 .buttonServicos{
-  border: 1px solid white;
+  border: none;
   border-radius: 4px;
   background-color:#0EbE68;
   height: 8%;
   width: 45%;
   margin-bottom: 10px;
   align-self:center;
+  display:flex;
+  justify-content: center;
 }
 
 .contract{
   font-weight: 600;
   color:white;
   font-size: 18px;
+  align-self:center;
 }
 
 @media screen and (max-width: 984px) {
