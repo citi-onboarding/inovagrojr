@@ -1,5 +1,5 @@
 body { 
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
   font-family: 'Lato',sans-serif; 
 }
@@ -26,10 +26,6 @@ body {
   max-width: 150px;
 }
 
-/*.navbar-logo img:hover {
-  max-width: 160px;
-}*/
-
 .navbar.navbar-colorful.navbar-transparent {
   background-color : rgba(0,0,0,.6);
 }
@@ -47,7 +43,7 @@ body {
 
 .navbar a:hover {
 	color: #8CCCBD;
-	font-weight: 600;
+	transition: all 0.3s ease;
 }
 
 ul li {
@@ -133,6 +129,7 @@ a:link {
   font-size: 22px;
   color: white;
   background: #8CCCBD;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   padding: 8px 12px;
 }
@@ -140,6 +137,7 @@ a:link {
 #contact-button:hover {
   color: #8CCCBD;
   background: white;
+  transition: all 0.5s ease;
 }
 
 @media screen and (max-width:768px) {
@@ -277,6 +275,7 @@ a:link {
   border: none;
   border-radius: 4px;
   background-color:#0EbE68;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   height: 8%;
   width: 45%;
   margin-bottom: 5px;
@@ -505,6 +504,7 @@ a:link {
 .sendButton {
   border-radius: 0.3vw;
   background-color:#0EbE68;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   width: auto;
   height: 45px;
   color:white;
