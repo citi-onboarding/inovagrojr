@@ -14,6 +14,9 @@ function navbarCollapse() {
 
 window.addEventListener('resize', navbarCollapse);
 
+// smooth scrooling navbar
+$('.navbar-topicos').localScroll();
+
 // sticky navbar on scroll
 const nav = document.querySelector('#idNavbar');
 const navTop = nav.offsetTop;
