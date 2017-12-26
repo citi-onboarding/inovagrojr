@@ -357,7 +357,7 @@ a:link {
 
 .mvvfonts {
   color:#272727;
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
   margin-top: 15px;
 }
@@ -394,7 +394,7 @@ a:link {
 .umafonte {
   text-align:left;
   color:#272727;
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-top: 35px;
 }
 
@@ -487,18 +487,20 @@ a:link {
   font-size:14px;
   font-family: 'Lato Semi-Bold',sans-serif;
   padding: 5px;
-  height: 40px;
+  margin-bottom: 10px;
+  height: 35px;
   max-width: auto;
 }
 
 .biggerMsgField {
-  border-radius:0.2vw;
-  border:none; 
+  border-radius: 0.2vw;
+  border: none; 
   font-family: 'Lato Semi-Bold',sans-serif; 
-  font-size:14px;
+  font-size: 14px;
   padding: 5px;
-  height:-webkit-fill-available;
+  height: 125px;
   max-width: auto;
+  resize: none;
 }
 
 .sendButton {
@@ -534,7 +536,7 @@ a:link {
 	.leftForm, .rightForm {
 		margin: 0px;
 		padding: 0px;
-		width: 300px;
+		width: 70%;
 	}
 
 	.form {
@@ -554,7 +556,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding: 40px 50px 40px 50px;
 }
 
 .footer-logo img {
@@ -581,7 +583,7 @@ footer {
 }
 
 .footer-contact span, .map span {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .map i {
@@ -619,15 +621,9 @@ footer {
     width: 100%;
     padding-left: 20px;
   }
-  
   .map .fa-map-marker {
     margin-left: -6px;
-  }
-  
-  #idMap {
-    width: 100%;
-  }
-  
+  }  
   .address-info {
     margin-top: 15px;
   }
